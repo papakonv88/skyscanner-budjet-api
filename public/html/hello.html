@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flights App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="./../css/hello.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+</head>
+<body>
+  
+<div>
+    
+    <div id="container">
+      <div id="placesPicker">
+        <div>
+          <label class="typo__label">Single select</label>
+          <multiselect v-model="value" :options="options" :searchable="false" :close-on-select="false" :show-labels="false" placeholder="Pick a value"></multiselect>
+          <pre class="language-json"><code>{{ value  }}</code></pre>
+        </div>
+      </div>
+  
+    </div>
+
+</div>
+   <script src="./../js/vue.min.js"></script>
+  <script src="./../js/index.js"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+
+
+</body>
+</html>
